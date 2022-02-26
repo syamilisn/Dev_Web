@@ -1,10 +1,10 @@
-<head><title>Arrays</title></head>
+<head><title>Arrays</title><link rel="stylesheet" href="styles.css"/></head>
 <body>
     <script src="includeTitle.js"></script>
     <script type="text/javascript">
-
+        document.write("<br><br>Method 1:");
         var friends = new Array("Asta","Noel","Mimosa"); //WAY 1
-        document.write(friends);
+        document.write("<br>",friends);
 
         var i = 0;
         while (i<3)
@@ -13,22 +13,32 @@
             i++;
         }
 
+        document.write("<br><br>Method 2:");
         var fruits = new Array(3);  //WAY 2
         fruits[0] = "apple";
         fruits[1] = "mango";
         fruits[2] = "orange";
         document.write("<br>",fruits);
 
-        document.write("<br>DYNAMIC ARRAY:");
+        document.write("<br><br>Method 3:");
         var colors = new Array();  //WAY 3 DYNAMIC ARRAY where size is not mentioned.
         colors.push("red","blue","green");
         for(i=0 ; i < colors.length ;i++)
         {
             document.write("<br>",colors[i]);
         }
-        document.write("<br>Fruits before poping: ",fruits);
+        document.write("<br>Fruits before popping: ",fruits);
         fruits.pop();
-        document.write("<br>Fruits after poping: ",fruits);
+        document.write("<br>Fruits after popping: ",fruits);
+
+        document.write("<br><br>Method 4:");
+        var friends2 = ["Asta","Noel","Mimosa"]; //WAY 4 SQUARE BRACKET NOTATION
+        document.write("<br>",friends2);
     </script>
-    <p>There are 3 methods mentioned here. and third one is DYNAMIC ARRAY.</p>
+    <pre>There are 3 methods mentioned here:
+        1. Declaration with size and Initialization in single step.
+        2. Declaration with size and initializing in the next step.
+        3. Declaration without mentioning size initializing in the next step.
+        4. Declaration and Initialization using Square bracket notation similar to python lists.
+    </pre>
 </body>
