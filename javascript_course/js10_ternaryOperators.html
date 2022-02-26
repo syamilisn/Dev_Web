@@ -1,12 +1,13 @@
 <head><title>Ternery Operators</title></head>
 <body>
     <script type="text/javascript">
-        document.write("LOGICAL OPERATIONS");
+        document.write("TERNARY OPERATIONS");
         // &&, ||, !
-        var x = 20; document.write("<br>Initial no: ",x);
-        var bool1 = x && 10; document.write("<br>x && 10: ",bool1);
-        var bool2 = x && "10"; document.write("<br>x && '10': ",bool2); 
-        var bool1 = x || 10; document.write("<br>x || 10: ",bool1);
-        var bool2 = x || "10"; document.write("<br>x || '10': ",bool2);
+        var x = 20; document.write("<br>Initial X: ",x);
+        var y = 30; document.write("<br>Initial Y: ",y);
+        var str1 = (x==y)? "<br>X equals Y" : "<br>X not equals Y";
+        var str2 = (x===y)? "<br>type(X) equals type(Y)" : "<br>type(X) not equals type(Y)";
+        document.write("<br>Ternery operation result for (X = = Y): ",str1);
+        document.write("<br>Ternery operation result for (X = = = Y): ",str2);
     </script>
 </body>
