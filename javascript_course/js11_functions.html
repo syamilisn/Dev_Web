@@ -1,0 +1,26 @@
+<head><title>JS Functions</title></head>
+<body>
+    <script type="text/javascript">
+        document.write("DEFAULT FUNCTIONS");
+        function firstFun()
+        {
+            document.write("<br>My first function.");
+        }
+        firstFun();
+
+        document.write("<br>PARAMETERIZED FUNCTIONS");
+        function secFun(x,y)
+        {
+            document.write("<br> "+x+y);
+        }
+        secFun("Black"," Clover")
+        secFun("Ezio"," Auditore")
+
+        document.write("<br>RETURN FUNCTIONS");
+        function strConcatFun(x,y)
+        {
+            return x+y
+        }
+        document.write("<br>",strConcatFun("Nanami"," Momozono"))
+    </script>
+</body>
