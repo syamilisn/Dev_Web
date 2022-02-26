@@ -1,0 +1,57 @@
+<head><title>Array Methods</title></head>
+<body>
+    <script src="includeTitle.js"></script>
+    <script type="text/javascript">
+
+        var Friends = new Array("Asta","Noel","Mimosa","Yuno","Charmi");
+        document.write("<br>No. of friends: ", Friends.length);
+        document.write("<br>Friends array: ",Friends,"<br>");
+        
+        document.write("<br>No. of friends: ", Friends.length);
+        document.write("<br>Friends before poping: ",Friends);
+        Friends.pop();
+        document.write("<br>No. of friends: ", Friends.length);
+        document.write("<br>Friends after poping: ",Friends);
+        document.write("<br>");
+
+        document.write("<br>No. of friends: ", Friends.length);
+        document.write("<br>Friends before shifting: ",Friends);
+        Friends.shift();
+        document.write("<br>No. of friends: ", Friends.length);
+        document.write("<br>Friends after shifting: ",Friends);
+        document.write("<br>");
+
+        document.write("<br>No. of friends: ", Friends.length);
+        document.write("<br>Friends before pushing: ",Friends);
+        Friends.push("charmi");
+        document.write("<br>No. of friends: ", Friends.length);
+        document.write("<br>Friends after pushing: ",Friends);
+        document.write("<br>");
+
+        document.write("<br>No. of friends: ", Friends.length);
+        document.write("<br>Friends before unshifting: ",Friends);
+        Friends.unshift("Asta");
+        document.write("<br>No. of friends: ", Friends.length);
+        document.write("<br>Friends after unshifting: ",Friends);
+        document.write("<br>");
+
+        document.write("<br>Friends after converting to string: ",Friends,toString());
+        document.write("<br>");
+
+        document.write("<br>Friends after joining (default): ",Friends.toString());
+        document.write("<br>Friends after joining with (;) as seperator: ",Friends.join(";"));
+        document.write("<br>Friends after joining (***) as seperator: ",Friends.join("***"));
+        document.write("<br>");
+    </script>
+    <p>NOTES: Here we are exploring the various Array methods:
+        <ul>
+            
+            <li>POP: removes last item.</li>
+            <li>SHIFT: removes first item.</li>
+            <li>PUSH: adds item last.</li>
+            <li>UNSHIFT: adds item first.</li>
+            <li>TOSTRING: converts array to string and adds comma as seperator.</li>
+            <li>JOIN: it adds custom seperator with the comma being the default seperator.</li>
+        </ul>
+    </p>
+</body>
