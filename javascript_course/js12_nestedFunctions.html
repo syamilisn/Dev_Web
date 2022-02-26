@@ -1,0 +1,18 @@
+<head><title>JS Nested Functions</title></head>
+<body>
+    <script src="includeTitle.js"></script>
+    <script type="text/javascript">
+        function age(y)
+        {
+            document.write("<br>I'm "+y+" years old.");
+        }
+
+        function name(x,y,z)
+        {
+            document.write("<br>My name is "+x+" from "+z+".");
+            age(y);
+        }
+        name("Nanami Momozono", 16,"Kamisama Kiss");
+        name("Kagome Higurashi", 15,"Inuyasha");
+    </script>
+</body>

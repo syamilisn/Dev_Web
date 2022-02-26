@@ -1,0 +1,27 @@
+<head><title>Local and global variables</title></head>
+<body>
+    <script src="includeTitle.js"></script>
+    <script type="text/javascript">
+        var x = "global X";
+        var y = "global Y";
+        
+        function calcX()
+        {
+            var x = "local X";      //Here new local variable x is defined
+            document.write("<br>X from function: ",x);
+        }
+
+        function calcY()
+        {
+            y="local Y"             //Here same global variable y is updated
+            document.write("<br>Y from function:",y);
+        }
+        document.write("<br>calcX() functions which defined new local variable x.");
+        calcX();
+        document.write("<br>X outside function: ",x);
+
+        document.write("<br>calcY() functions which used global var y.");
+        calcY();
+        document.write("<br>Y outside function: ",y);
+    </script>
+</body>
