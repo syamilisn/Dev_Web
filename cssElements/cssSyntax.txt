@@ -1,0 +1,10 @@
+selector{
+    property1 : value;
+    property2 : value;
+}
+
+<!--
+    Each item in selector is called DECLARATION.
+    All declarations combined form the DECLARATION BLOCK.
+    The whole selector is called a RULE.
+-->

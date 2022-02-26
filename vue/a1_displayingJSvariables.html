@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>displaying js variables</title>
+</head>
+<body>
+    <div id="app"> 
+        {{greeting}}
+    </div>
+
+    <!--Vue import CDN link (no need bable)-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--Own Scipt-->
+    <script>
+        //save app as variable
+        let app = Vue.createApp({
+            //options object (deals with data used)
+            data: function(){
+                return{
+                    greeting: 'Hello Natsu!'
+                }
+            }
+        })
+        //mount application in HTML
+        //can interact in tags with id=app EG: div
+        app.mount('#app')
+    </script>
+</body>
+</html>

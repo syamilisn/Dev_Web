@@ -1,0 +1,16 @@
+<title>input display</title>
+<script>
+    
+    function display(){
+        var x = document.getElementById("n1").value;
+        document.getElementById("show").innerHTML = x;
+    }
+</script>
+<body>
+    <p>
+        n1:
+        <input type="number" id="n1"/>  <br>
+        <button onclick="display()">Display</button>
+    </p>
+    <p id="show"></p>
+</body>

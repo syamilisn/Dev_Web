@@ -1,0 +1,9 @@
+<title></title>
+<script>
+    var a = 10;
+    function f1(){}
+    document.write("msg");
+</script>
+<body>
+    <p></p>
+</body>

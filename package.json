@@ -1,0 +1,25 @@
+{
+  "name": "dummy",
+  "version": "1.0.0",
+  "description": "Just a dummy json package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syamilisn/Web-Development-Repo.git"
+  },
+  "keywords": [
+    "html"
+  ],
+  "author": "syamili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syamilisn/Web-Development-Repo/issues"
+  },
+  "homepage": "https://github.com/syamilisn/Web-Development-Repo#readme",
+  "dependencies": {
+    "vue": "^2.6.14"
+  }
+}

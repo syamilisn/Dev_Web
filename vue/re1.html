@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rohit </title>
+        <style>
+            .box{
+                background-color: purple;
+                height:200 px;
+                width:200 px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            DOREMON
+            {{greeting}}
+            <!--2-way data binding-->
+            <input v-model="greeting"/>
+            <hr />
+            <div v-if="visible" class="box">
+
+            </div>
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script>
+            //storing app in a variable
+            let app = Vue.createApp({
+                //options object:
+                data: function(){
+                    return{
+                        greeting: 'Hello Vue 3!',
+                        visible: true
+                    }
+                }
+            })
+            //mount application in above html
+            app.mount('#app')
+        </script>
+    </body>
+</html>

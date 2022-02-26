@@ -1,0 +1,50 @@
+<head><title> If-Else Statement </title></head>
+<body>
+    <script type="text/javascript">
+        document.write("Here semicolon and paranthesis is not necessary.");
+        var x = 7; document.write("<br>X: ",x);
+        var y = "7"; document.write("<br>Y: ",y);
+        var z = 7; document.write("<br>Z: ",z);
+        var p = 10; document.write("<br>P: ",p);
+
+        if (x==y) 
+        { 
+            document.write("<br>X equals to Y");
+        }
+        else
+        {
+            document.write("<br>X not equals to Y");
+        }
+
+        if (x==z) document.write("<br>X equals to Z");
+
+        if (x===y) document.write("<br>X triple equals to Y"); else document.write("<br>X not triple equals to Y");
+        if (x===z) document.write("<br>X triple equals to Z");
+
+        if (x!=y) document.write("<br>X not equals to Y"); //not displayed
+        if (x!==y) document.write("<br>X not triple equals to Y");
+
+        if (p>x) document.write("<br>P is greater that X");
+        if (x>=z) document.write("<br>X is greater that or equal to Z");
+
+        if (1) document.write("<br>Yes 1.");
+        if (0) document.write("<br>No 0."); //not displayed
+
+        if (true) document.write("<br>Yes true.");
+        if (false) document.write("<br>No false."); //not displayed
+
+
+        //NESTED IF-ELSE
+        if (x==y)
+        {
+            document.write("<br>X equals to Y");
+            if (x===y) document.write("<br>Types are matching."); 
+            else document.write("<br>Types are not matching.");
+        }
+
+        else
+        {
+            document.write("<br>X not equals to Y");
+        }
+    </script>
+</body>

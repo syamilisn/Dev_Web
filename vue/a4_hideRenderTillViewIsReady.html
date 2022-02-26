@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hide render till view is ready</title>
+         <style>
+             [v-cloak]{
+                 display: none;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="app" v-cloak>
+            {{x}}
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script>
+            let app= Vue.CreateApp({
+                data: function(){
+                    return{
+                        x: 'halo world'
+                    }
+                }
+            })
+            app.mount('#app')
+        </script>
+    </body>
+</html>

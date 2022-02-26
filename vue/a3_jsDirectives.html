@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js directives</title>
+    <style>
+        .box{
+            background-color: purple;
+            height: 200px;
+            width: 200px;
+        }
+        .box.two{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+        .box.three{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"> 
+        <!-- 
+            v-if: something should render or not
+            v-show: for toggle purpose. It is there, but decided whether to 
+            display or not instead of removing or adding it completely.
+            v-else:
+            v-else-if:
+        -->
+        <div v-if="isVisible" class="box"></div>
+        <div v-else-if="isVisible2" class="box two"></div>
+        <div v-else class="box three"></div>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        let app = Vue.createApp({
+            data: function(){
+                return{
+                    isVisible: false,
+                    isVisible2: true
+                }
+            }
+        })
+        app.mount('#app')
+    </script>
+</body>
+</html>

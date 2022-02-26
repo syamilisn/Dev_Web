@@ -1,0 +1,32 @@
+<body>
+    
+    <p>Some content<br>Give random lines.<br>Today is a good day.<br> top: link to page.</p>
+    <p>      
+        <!--ABSOLUTE REFERENCE: starts from https:// for External sites-->  
+        <a href="https://www.medicalnewstoday.com/articles/272782">Link to external site: Oranges</a><br>
+
+        <a href="https://cdn-prod.medicalnewstoday.com/content/images/articles/272/272782/oranges-in-a-box.jpg">
+        Link to resource on external site: Oranges img</a><br>
+
+        <a href="headings.html">Headings page in same site as current page</a><br>
+
+        <a href="#top">Go to top of Document</a> <!--zoom page 500% to check this out-->
+        <!--goes to where top is in the page-->
+        <a href=""></a>
+
+        <!--anchor name which can link to same/other pages like a manual pointer!!! -->
+        <a name="top"><br> <!--makes the succeeding text that matches name as the new goto link-->
+        Difference between href="#top" and name= "top" is that the former matches the first time the text is encountered and 
+        the latter matches to the text inside content, written after the anchor name tag is declared.<br>
+        z<br>z<br>z<br>top<br>
+
+        <a href="../index.html#review">review</a>
+
+        <a href="mailto:dummymail@email.com">Link to email</a> <!--redirects to mail and becomes receiver's address-->
+
+        <a href="tel:+18009220579">Call toll free (800) 922-0579</a> <!--makes phone-->
+
+        <!--javascript-->
+        <a href="javascript:OpenAnnoyingPopup();">See this</a>
+    </p>
+</body>

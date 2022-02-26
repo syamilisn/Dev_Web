@@ -1,0 +1,17 @@
+<!DOCTYPE html> <!--Document type definition-->
+<html>
+	<head lang="en"> <!-- Description-->
+		<meta charset="utf-8"> <!--character encoding-->
+		<title></title> <!--TAB name-->
+		<!--CSS Styles-->
+		<style type="text/css"></style>
+		<!--JavaScript-->
+		<script src=""></script>
+	</head>
+	<body><!--Contents -->
+		<!--or jScript at the end of html is preferred-->
+		<!--JavaScript-->
+		<script type="text/javascript"></script>
+		
+	</body>
+</html>

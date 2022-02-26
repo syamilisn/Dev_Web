@@ -1,0 +1,64 @@
+h1 {
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: bold;
+    color: orange;
+}
+
+em {
+    color: blue;
+}
+
+p {
+    margin: 5px 0 10px 0;
+    font-weight: bold;
+    font-family: Times, Arial, Helvetica, sans-serif;
+}h1 {
+    font-size: 16pt;
+}
+
+h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    color: orange;
+}
+
+em {
+    color: blue;
+}
+
+p {
+    font-size: 12pt;
+    margin: 5px 0 10px 0;
+    /*font-weight: bold;*/
+    font-family: Times, Arial, Helvetica, sans-serif;
+}
+
+table,th,td{
+    border:solid 1pt black;
+    border-collapse:collapse;
+    padding:10pt;
+    text-align:center;
+    word-wrap: break-word;
+    margin: auto;
+}
+
+.c1{
+    width: 75%;
+}
+
+div#master, div#header, div#footer{
+    max-width: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

@@ -1,0 +1,16 @@
+<title>array</title>
+<p id="demo"></p>
+<script type="text/javascript">
+    /*var text,i,flen;*/
+    var fruits=["mango","banana","orange"];
+    flen=fruits.length;
+
+    text="<ui>";
+    for(i=0;i<flen;i++){
+        text+="<li>"+fruits[i]+"</li>";
+    }
+
+    text+="</ui>";
+
+    document.getElementById("demo").innerHTML=fruits;
+</script>

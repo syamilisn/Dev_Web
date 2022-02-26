@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2-way data binding</title>
+</head>
+<body>
+    <div id="app"> 
+        {{greeting}}
+        <!--Assigns user input to the variable greeting-->
+        <input v-model="greeting"/>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        let app = Vue.createApp({
+            data: function(){
+                return{
+                    greeting: 'Hey Lucy!',
+                }
+            }
+        })
+        app.mount('#app')
+    </script>
+</body>
+</html>

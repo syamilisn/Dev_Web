@@ -1,0 +1,44 @@
+<!--Variables start with letters, underscore or dollar but not numbers-->
+<html>
+<head><title>Variables</title></head>
+<body>
+    <script type = "text/javascript">
+        var a = 10;
+        a+=5;
+        var b = 20.6;
+        var c = a+b;
+        document.write("Sum of ",a," and ",b," is ",c,"<br>");
+
+        var name = "Black Clover <br>";
+        document.write(name);
+
+        var bool = true; //first letter of true is not capitalized otherwise error
+        //document.write(bool);
+
+        var undefinedVarName; //An undefined variable
+        var z = undefined; //Another undefined variable
+        var c = null;
+
+        var fruits = ["Apple","Banana","CustardApple"]; //An array variable
+        document.write("<br>Fruit: "+fruits[1]);
+
+        var myObject = { 
+            name : "John",
+            age : 20
+        }; //A dictionary object
+        document.write("<br>Name: ",myObject.name, "<br>Age: ",myObject.age);
+    </script>
+    <p>
+        Variable Types: <br>
+        <ol>
+            <li>Integer</li>
+            <li>String</li>
+            <li>Boolean</li>
+            <li>Undefined</li>
+            <li>Null</li>
+            <li>Array</li>
+            <li>Object</li>
+        </ol>
+    </p>
+</body>
+</html>

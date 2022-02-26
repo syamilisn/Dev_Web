@@ -1,0 +1,60 @@
+<!--
+    onclick input num1
+    onclick input num2
+    onclick call add() when add button is pressed
+    "sub()
+    "mul()
+    "div()
+    display answer
+    clear all option
+-->
+<title>simple calculator: +-*/</title>
+<script>
+    var a = document.getElementById("n1").value;
+    var b = document.getElementById("n2").value;
+    //document.getElementById("answer").innerHTML = a;
+    function calc(click_id){
+        var a = Number(document.getElementById("n1").value);
+        var b = Number(document.getElementById("n2").value); 
+        document.getElementById("answer").innerHTML = a+b;       
+        //if (id=="add")
+            //var ans= a+b;
+            //document.getElementById("answer").innerHTML = ans;
+        //else if (id=="sub")
+            //document.getElementById("answer").innerHTML = a-b;
+    }
+    function add(){
+        
+        //document.getElementById("answer").innerHTML = (a+b);
+    }
+    function sub(){
+        return (a-b);
+    }
+    function mul(){
+        return (a*b);
+    }
+    function div(){
+        return (a/b);
+    }
+    document.write("add: "+ add()+"<br>");
+    document.write("sub: "+ sub()+"<br>");
+    document.write("mul: "+ mul()+"<br>");
+    document.write("div: "+ div()+"<br>");
+</script>
+<body>
+    <p>
+        n1:
+        <input type="number" id="n1"/>  <br>
+        n2:
+        <input type="number" id="n2"/>  <br>
+
+        <button id="add" onclick="calc(this.id)">Addition</button>
+        <button id="sub" onclick="calc(this.id)">Subtraction</button>
+        <button id="mul" onclick="calc(this.id)">Multiplication</button>
+        <button id="div" onclick="calc(this.id)">Division</button>
+
+    </p>
+    <div id = "answer">
+        
+    </div>
+</body>
