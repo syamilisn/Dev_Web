@@ -1,0 +1,31 @@
+<html>
+<head><title> Dom method:<br>1. createAttribute()</title><link rel="stylesheet" href="domstyles.css"/></head>
+<body>
+    <script src="includeTitle.js"></script>
+
+    <!--HTML CODE-->
+    <h1>Reviews</h1>
+    <h2>Welcome</h2>    
+    <hr/>
+    <button onclick="myFunction()">CLICK ME</button>
+    <!--END OF HTML CODE-->
+
+    <script>
+        function myFunction()
+        {
+            const attbNode = document.createAttribute("class");
+            attbNode.value = "domclass";
+            const elemNode = document.getElementsByTagName("h1")[0];
+            elemNode.setAttributeNode(attbNode);
+
+            const attb2 = document.createAttribute("id");
+            attb2.value = "domid";
+            const elem2 = document.getElementsByTagName("h2")[0].setAttributeNode(attb2);
+        }
+    </script>
+    <pre>NOTES:
+        1. createAttribute(): Creates an attribute node.
+        2. setAttributeNode(): Sets attribute node value.
+    </pre>
+</body>
+</html>

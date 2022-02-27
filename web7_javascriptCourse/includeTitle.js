@@ -1,2 +1,2 @@
 title = document.title.toUpperCase().bold();
-document.write("TOPIC: ",title,"<br>");
+document.write("TOPIC: ",title,"<br><hr>");

@@ -1,0 +1,16 @@
+<head><title> Dom method:<br>3. createTextNode()</title></head>
+<body>
+    <script src="includeTitle.js"></script>
+    <script>
+        const textNode = document.createTextNode("Hello world"); //simple text
+        document.body.appendChild(textNode);
+
+        const h1 = document.createElement("H1"); //text inside element
+        const textNode2 = document.createTextNode("Hello World");
+        h1.appendChild(textNode2);
+        document.body.appendChild(h1);
+    </script>
+    <pre>NOTES:
+        1. createTextNode(): Creates a text node.
+    </pre>
+</body>

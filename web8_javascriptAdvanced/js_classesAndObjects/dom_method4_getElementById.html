@@ -1,0 +1,17 @@
+<head><title> Dom method:<br>4. getElementById()</title></head>
+<body>
+    <script src="includeTitle.js"></script>
+    <p id ="hello">
+        This is a para.
+    </p>
+    <p id="demo"></p>
+    <script>
+        const elemNode = document.getElementById("hello");
+        document.write(elemNode.innerHTML + "It is called using dom's object!");
+
+        document.getElementById("demo").innerHTML = "Black clover!!!";
+    </script>
+    <pre>NOTES:
+        1. getElementById(id): returns a single element node.
+    </pre>
+</body>

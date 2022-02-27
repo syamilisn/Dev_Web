@@ -1,0 +1,17 @@
+.domclass, .mainclass
+{
+    color:red;
+}
+
+#domid
+{
+    color:blue;
+}
+
+p 
+{
+    font-size: 12pt;
+    margin: 5px 0 10px 0;
+    /*font-weight: bold;*/
+    font-family: Times, Arial, Helvetica, sans-serif;
+}
