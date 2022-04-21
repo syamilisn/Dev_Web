@@ -1,0 +1,31 @@
+<head><title> check even odd num</title></head>
+<body>
+    <script src="includeTitle.js"></script>
+    
+    <div id="output"></div>
+    <input type="number" name = "myNum" min = "0" max = "100" value="4">
+    <input type = "button" id ="testbtn" value="check"> 
+    <script>
+        const output = document.getElementById('output');
+        const testbtn = document.getElementById('testbtn');
+        testbtn.addEventListener('click',checkVal);
+        function checkVal(){
+            console.log('test');
+            let val = document.querySelector('input[name="myNum"]').value;
+            output.innerHTML = numChecker(val);
+        }
+
+        function numChecker(num){
+            //check if the number is even
+            if(num % 2 == 0) {
+                mssg = "The number is even.";
+            }
+
+            // if the number is odd
+            else {
+                mssg = "The number is odd.";
+            }
+            return mssg;
+        }
+    </script>
+</body>
